@@ -87,22 +87,22 @@
 - read 讀取
 - update 更新
 - delete 刪除
-
+-
 - isEmpty 判斷為空
 - isFull 判斷為滿 (只給靜態結構)
 - count 回傳元素數量
 - capacity 回傳陣列大小 (只給靜態結構)
 - clear 刪除所有元素
-
+-
 - search 搜尋元素
 - sort 排序元素
-
+-
 - join 合併兩個集
 - union 回傳兩個集所有不同的元素
 - intersect 回傳兩個集所有相同的元素
 - diffrence **保留** 僅存一集之元素
 - symmetric diffrent **保留** 僅存兩集但非共同之元素
-
+-
 - push/pop 推入/推出
 - enqueue/dequeue 排出/排入
 - peek/top/front/rear 查看元素
@@ -113,9 +113,8 @@
 
 ---
 ## 時間複雜度(Time Complexity)
-
-O(1)<O(logn)<O(n)<O(nlogn)<O(n2)<O(n3)<O(2n)<O(n!)
-tip:將n帶10 即可比大小
+-O(1)<O(logn)<O(n)<O(nlogn)<O(n2)<O(n3)<O(2n)<O(n!)
+-tip:將n帶10 即可比大小
 
 ---
 
