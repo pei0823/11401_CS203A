@@ -4,20 +4,21 @@
 - windows visual studio 2022
 
 ## 設計概念
-- int myHashInt(int key, int m) {
-    
-	key *= 4000000007UL;
-	if (key < 0) key = -key; 
+// Hash function for integer keys
+int myHashInt(int key, int m) {
+    key *= 4000000007UL;  // 乘以極大質數
+    if (key < 0) key = -key; 
     return key % m;
 }
 
+// Hash function for string keys
 int myHashString(const std::string& str, int m) {
     unsigned long hash = 1;
     for (char c : str) {
         int val = (int)c;   
-        hash *= val ;
+        hash *= val;  // 累乘 ASCII 值
     }
-    hash *= 4000000007UL;
+    hash *= 4000000007UL;  // 再乘以極大質數
     return static_cast<int>(hash % m);  
 }
 
