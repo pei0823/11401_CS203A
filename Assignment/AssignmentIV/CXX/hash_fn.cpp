@@ -23,6 +23,9 @@ int myHashInt(int key, int m) {
 
 int myHashString(const std::string& str, int m) {
     unsigned long hash = 0;
-    // TODO: replace with your own design
+    for (char c : str) {
+        int val = (int)c;   // 將字元轉成對應的 ASCII 數字
+        hash += val * 2654435761;
+    }
     return static_cast<int>(hash % m);  // basic division method
 }
