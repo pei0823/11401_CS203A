@@ -15,8 +15,9 @@
 #include "hash_fn.hpp"
 
 int myHashInt(int key, int m) {
-    // TODO: replace with your own design
-    return key % m;  // basic division method
+   key *= 222; // Knuth's multiplicative method
+if (key < 0) key = -key; // ensure non-negative
+return key % m;
 }
 
 int myHashString(const std::string& str, int m) {
