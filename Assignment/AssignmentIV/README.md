@@ -1,16 +1,26 @@
 # Assignment IV: Hash Function Design & Observation
 
-## Important Dates
-- **Due Date**: 2025.11.23 23:59:59  
-- **Submission**: Submit your code in C and C++ along with `README.md` in your course repository (`11401_CS203A/Assignment/AssignmentIV/`).
+## 執行環境
+- windows visual studio 2022
 
-## Learning Objectives
-- Understand how the **choice of hash function** and **table size** (m) affects index distribution.
-- Design and implement hash functions for both **integer keys** and **string keys**.
-- Gain practical experience in creating and testing **hash functions** in C and C++.
-- Analyze **index patterns**, **collision rates**, and **distribution uniformity** for various table sizes (m).
-- Learn how to use [Visual Studio Code to connect to your GitHub repository](./VSCode.md) for seamless version control and collaboration.
-- **Install C/C++ Compiler**: Follow the [C/C++ compiler installation guide](./CComplier.md) to set up MinGW-W64 on Windows or ensure GCC/Clang is installed on Linux/macOS for compiling your hash function implementations.
+## 設計概念
+- int myHashInt(int key, int m) {
+    
+	key *= 4000000007UL;
+	if (key < 0) key = -key; 
+    return key % m;
+}
+
+int myHashString(const std::string& str, int m) {
+    unsigned long hash = 1;
+    for (char c : str) {
+        int val = (int)c;   
+        hash *= val ;
+    }
+    hash *= 4000000007UL;
+    return static_cast<int>(hash % m);  
+}
+
 
 ## Repository Structure
 ```
