@@ -16,7 +16,7 @@
 
 int myHashInt(int key, int m) {
     
-	key *= 157; // Knuth's multiplicative method
+	key *= 2654435761; // Knuth's multiplicative method
 	if (key < 0) key = -key; // ensure non-negative
     return key % m;
 }
