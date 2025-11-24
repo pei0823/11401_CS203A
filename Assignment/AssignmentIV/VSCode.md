@@ -1,4 +1,6 @@
 # Connect to GitHub with VSCode
+- 開發平台window
+  
 
 ## Prerequisites
 Before you begin, ensure you have the following:
@@ -14,7 +16,7 @@ Before you begin, ensure you have the following:
     - Search for "GitHub Pull Requests and Issues" and install the extension.
 
 2. **Sign in to GitHub**
-    - Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS).
+    - Open the Command Palette )
     - Type `GitHub: Sign in` and select the option.
     - Follow the prompts to authenticate with your GitHub account.
 
