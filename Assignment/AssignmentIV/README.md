@@ -22,6 +22,7 @@ int myHashString(const std::string& str, int m) {
     hash *= 4000000007UL;  // 再乘以極大質數
     return static_cast<int>(hash % m);  
 }
+```
 integer乘以一極大的質數。
 string 先換成ASCII，一樣乘以一個極大數質數。
 參考資料: https://medium.com/swlh/why-should-the-length-of-your-hash-table-be-a-prime-number-760ec65a75d1```
