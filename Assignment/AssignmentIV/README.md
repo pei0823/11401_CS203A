@@ -62,9 +62,9 @@ return static_cast<int>(hash % m);  // basic division method
 
 | Table Size (m) | Index Sequence      | Observation              |
 | -------------- | ------------------- | ------------------------ |
-| 10             | 1, 2, 3, 4, ...     | Pattern repeats every 10 |
-| 11             | 10, 0, 1, 2, ...    | More uniform             |
-| 37             | 20, 21, 22, 23, ... | Near-uniform             |
+| 10             | 3 ,4 ,5 ,6, ...     | 雖然有分布較廣，但依舊還是有些會照順序      |
+| 11             | 6, 8, 7, 6, ...     | 改成奇數後有改善 index隨機很多，但仍然集中  |
+| 37             | 20, 28, 32, 36, ... | index明顯較為分布，且碰撞率沒有前兩者高     |
 
 ---
 
