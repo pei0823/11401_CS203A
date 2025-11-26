@@ -129,13 +129,13 @@ int myHashString(const std::string& str, int m) {
   ```
   === Hash Function Observation (C Version) ===
 
- === Table Size m = 10 ===
-Key     Index
------------------
-21      3
-22      4
-23      5
-24      6
+=== Table Size m = 10 ===
+  Key     Index
+  -----------------
+ 21      3
+ 22      4
+ 23      5
+ 24      6
 25      7
 26      8
 27      9
@@ -274,6 +274,7 @@ Key     Index
 58      1
 59      32
 60      28
+...
   ```
 
 - Example output for strings:
