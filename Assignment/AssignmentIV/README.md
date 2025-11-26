@@ -3,9 +3,9 @@
 This assignment focuses on the design and observation of hash functions using C/C++.
 Students are expected to implement and analyze the behavior of hash functions, evaluate their efficiency, and understand their applications in computer science.
 
--**Developer:** 林沛陞
--**Email:** [easonlin0925250286@gmail.com](mailto:easonlin0925250286@gmail.com)
--**使用環境:** Windows
+* **Developer:** 林沛陞
+* **Email:** [easonlin0925250286@gmail.com](mailto:easonlin0925250286@gmail.com)
+* **使用環境:** Windows
 
 ---
 
